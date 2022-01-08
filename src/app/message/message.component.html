@@ -1,0 +1,19 @@
+<div class="message-wrapper">
+  <h2>Send a random Donald Trump quote to any phone number in the world!</h2>
+
+  <div class="message-form">
+    <mat-form-field class="message-input" appearance="fill">
+      <mat-label>Phone Number</mat-label>
+      <input matInput type="tel" placeholder="Ex. +55 11 99999-9999" [(ngModel)]="phoneNumber">
+    </mat-form-field>
+
+    <mat-form-field class="message-input" appearance="fill">
+      <mat-label>Text some random message</mat-label>
+      <textarea matInput placeholder="Ex. Hello World" [(ngModel)]="message"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="sendMessage()">Send</button>
+
+  </div>
+</div>
+
