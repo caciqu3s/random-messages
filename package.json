@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-pages": "ng build --prod --base-href https://caciqu3s.github.io/random-messages/",
+    "publish-page": "ngh",
+    "publish": "npm run build-pages && npm run publish-page"
   },
   "private": true,
   "dependencies": {
